@@ -1,0 +1,129 @@
+/*Public style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bs-primary-rgb: 255, 200, 0;
+}
+.clr{
+  clear: both;
+}
+/*navbar*/
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.container {
+  margin: auto;
+  width: 80%;
+}
+/*navbar*/
+.navbar {
+  display: flex;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  padding: 10px 0;
+}
+.navbar .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  margin-top: 8px;
+}
+.logo img {
+  width: 50%;
+}
+
+.list ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.list ul a {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+
+
+/*portfolo*/
+.portfolo {
+  padding-top: 4rem;
+  background-color: #f6f6f5;
+}
+.portfolo .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.porto-title {
+  margin-top: 40px;
+}
+.portfolo h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.portfolo p {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+  color: gray;
+  margin-top: 1rem;
+}
+.portfolo .rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0.8rem;
+}
+.porto-item {
+  flex-basis: 350px;
+  position: relative;
+  background-color: white;
+}
+.porto-item .item-hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 200, 0, 0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  opacity: 0;
+  z-index: 0;
+  color: #fff;
+  height: 75%;
+}
+.porto-item .item-hover:hover {
+  opacity: 1;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.porto-item img {
+  width: 100%;
+  height: 75%;
+}
+.caption-porto h3 {
+  font-size: 1.5rem;
+}
+.caption-porto p {
+  font-style: italic;
+  font-size: 1rem;
+}
